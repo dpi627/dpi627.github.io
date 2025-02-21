@@ -1,4 +1,5 @@
 window.onload = function() {
+    return;
     Swal.fire({
         icon: 'info', // 警告圖示
         title: '<div class="mt-4 mb-4">🤓 Hi there!<br> I\'m <span class="text-danger">Brian</span>, a software developer.</div>',
