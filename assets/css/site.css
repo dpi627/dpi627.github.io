@@ -97,12 +97,28 @@ a:active {
     color: #4A8079;
 }
 
+.fs-06, .fs-07, .fs-08, .fs-09 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fs-06 {
+    font-size: 0.6rem;
+}
+.fs-07 {
+    font-size: 0.7rem;
+}
+.fs-08 {
+    font-size: 0.8rem;
+}
+.fs-09 {
+    font-size: 0.9rem;
+}
+
 /* 調整時間軸容器 */
 .timeline {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 /* 垂直輔助線 */
