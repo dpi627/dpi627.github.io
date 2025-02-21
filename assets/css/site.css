@@ -96,3 +96,88 @@ a:hover {
 a:active {
     color: #4A8079;
 }
+
+/* 調整時間軸容器 */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* 垂直輔助線 */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #4A8079;
+    left: 30px; /* 固定垂直線在左側，適應狹窄空間 */
+    margin-left: 0;
+    z-index: 0;
+}
+
+/* 時間軸項目 */
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 60px; /* 留出空間給年份圓點和垂直線 */
+}
+
+/* 調整內容區塊 */
+.timeline-item .timeline-content {
+    width: 90%; /* 增加寬度以適應單列，減少溢出 */
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    position: relative;
+    float: none; /* 移除浮動，改為單列 */
+    text-align: left; /* 統一左對齊 */
+}
+
+/* 移除左右交錯的浮動邏輯 */
+.timeline-item:nth-child(odd) .timeline-content,
+.timeline-item:nth-child(even) .timeline-content {
+    float: none;
+    text-align: left;
+}
+
+/* 年份圓點 */
+.timeline-item .timeline-year {
+    position: absolute;
+    top: 15px;
+    width: 40px; /* 進一步縮小圓點 */
+    height: 40px;
+    background: #4A8079;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    left: -50px; /* 將圓點移到左側，與垂直線對齊 */
+    margin-left: 0;
+    z-index: 1;
+    font-size: 0.8rem;
+}
+
+/* 移除響應式媒體查詢，因為我們已經採用單列設計 */
+@media (max-width: 794px) {
+    .timeline::before {
+        left: 25px;
+    }
+
+    .timeline-item {
+        margin-left: 60px;
+    }
+
+    .timeline-item .timeline-content {
+        width: 90%;
+        float: none;
+        text-align: left;
+    }
+
+    .timeline-item .timeline-year {
+        left: -50px;
+    }
+}
