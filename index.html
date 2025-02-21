@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張三 - 個人履歷</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <style>
+        /* 自訂樣式 */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* 圓形照片 */
+            border: 2px solid #CCC; /* 邊框 */
+        }
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .a4-container {
+            width: 794px; /* A4 寬度 210mm ≈ 794px */
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        header {
+            background-color: #4A8079;
+            color: #ccc;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* 左邊文字，右邊照片 */
+            align-items: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 1em;
+            font-size: 0.7em;
+            color: #4A8079;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+        h2, h3, h4, h5 {
+            color: #4A8079;
+            font-weight: bold;
+        }
+        h1 {
+            margin: 0; /* 移除 h1 預設邊距 */
+        }
+        .social-icons a {
+            text-decoration: none; /* 移除底線 */
+            margin-right: 10px; /* 圖示之間的間距 */
+        }
+        .social-icons img {
+            width: 20px;
+            vertical-align: middle; /* 圖示垂直對齊 */
+            border-radius: 50%; /* 圓形圖示 */
+        }
+        .sidemenu {
+            border-left: #4A8079 1px dashed;
+        }
+        .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    overflow: hidden; /* 隱藏超出容器部分 */
+    width: 100%; /* 或設置特定寬度 */
+}
+
+.badge-wrapper {
+    display: flex;
+    gap: 10px; /* 確保每個圖示之間有間距 */
+    animation: scroll 30s linear infinite;
+    white-space: nowrap; /* 防止換行 */
+}
+.badge-wrapper:hover {
+    animation-play-state: paused; /* 懸停時暫停 */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-30%); }
+}
+    </style>
+</head>
+<body>
+    <!-- A4 大小的整體容器 -->
+    <div class="a4-container">
+        <!-- HEADER 區塊 -->
+        <header>
+            <div>
+                <h1 class="text-dark"><span class="text-light me-3">李</span>威德</h1>
+                <hr>
+                <p class="mt-1">
+                    ✉️dpi.studio@gmail.com<br>
+                    📞0919-580-627
+                    <div class="social-icons">
+                        <a href="https://github.com/dpi627" target="_blank">
+                            <img src="/assets/img/github.svg">
+                        </a>
+                        <a href="https://medium.com/@dpi.studio" target="_blank">
+                            <img src="/assets/img/medium.svg">
+                        </a>
+                        <a href="https://i-dpi.blogspot.com/" target="_blank">
+                            <img src="/assets/img/blogger.svg">
+                        </a>
+                        <a href="https://linkedin.com/in/dpi627" target="_blank">
+                            <img src="/assets/img/linkedin.svg">
+                        </a>
+                        <a href="https://www.flickr.com/photos/dpi/albums" target="_blank">
+                            <img src="/assets/img/flickr.svg">
+                        </a>
+                    </div>
+                </p>
+            </div>
+            <img src="/assets/img/avatar.png" alt="照片" class="profile-pic">
+        </header>
+
+        <div class="badge">
+            <div class="badge-wrapper">
+                <img src="https://img.shields.io/badge/-8-512BD4?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-6-512BD4?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-Framework-3484D2?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-Standard-056473?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-NuGet-004880?logo=nuget" >
+                <img src="https://img.shields.io/badge/Git-555?logo=git" >
+                <img src="https://img.shields.io/badge/gitignore-204ECF?logo=gitignore.io" >
+                <img src="https://img.shields.io/badge/GitHub-555?logo=github" >
+                <img src="https://img.shields.io/badge/Gitea-555?logo=gitea" >
+                <img src="https://img.shields.io/badge/Gitea_Actions-555?logo=githubactions" >
+                <img src="https://img.shields.io/badge/Sourcetree-0052CC?logo=sourcetree" >
+                <img src="https://img.shields.io/badge/draw.io-555?logo=diagrams.net" >
+                <img src="https://img.shields.io/badge/YAML-CB171E?logo=yaml" >
+                <img src="https://img.shields.io/badge/Markdown-555?logo=markdown" >
+                <img src="https://img.shields.io/badge/LaTex-008080?logo=latex" >
+                <img src="https://img.shields.io/badge/Mermaid-555?logo=mermaid" >
+                <img src="https://img.shields.io/badge/SVN-555?logo=subversion" >
+                <img src="https://img.shields.io/badge/Shields.io-555?logo=shieldsdotio" >
+                <img src="https://img.shields.io/badge/Anthropic-191919?logo=anthropic" >
+                <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai" > 
+                <img src="https://img.shields.io/badge/GitHub_Copilot-555?logo=githubcopilot" >
+                <!--duplicate for scroll-->
+                <img src="https://img.shields.io/badge/-8-512BD4?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-6-512BD4?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-Framework-3484D2?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-Standard-056473?logo=dotnet" >
+                <img src="https://img.shields.io/badge/-NuGet-004880?logo=nuget" >
+                <img src="https://img.shields.io/badge/Git-555?logo=git" >
+                <img src="https://img.shields.io/badge/gitignore-204ECF?logo=gitignore.io" >
+                <img src="https://img.shields.io/badge/GitHub-555?logo=github" >
+                <img src="https://img.shields.io/badge/Gitea-555?logo=gitea" >
+                <img src="https://img.shields.io/badge/Gitea_Actions-555?logo=githubactions" >
+                <img src="https://img.shields.io/badge/Sourcetree-0052CC?logo=sourcetree" >
+                <img src="https://img.shields.io/badge/draw.io-555?logo=diagrams.net" >
+                <img src="https://img.shields.io/badge/YAML-CB171E?logo=yaml" >
+                <img src="https://img.shields.io/badge/Markdown-555?logo=markdown" >
+                <img src="https://img.shields.io/badge/LaTex-008080?logo=latex" >
+                <img src="https://img.shields.io/badge/Mermaid-555?logo=mermaid" >
+                <img src="https://img.shields.io/badge/SVN-555?logo=subversion" >
+                <img src="https://img.shields.io/badge/Shields.io-555?logo=shieldsdotio" >
+                <img src="https://img.shields.io/badge/Anthropic-191919?logo=anthropic" >
+                <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai" > 
+                <img src="https://img.shields.io/badge/GitHub_Copilot-555?logo=githubcopilot" >
+            </div>
+        </div>
+
+        <!-- CONTENT 區塊 -->
+        <div class="content">
+            <div class="row">
+                <!-- 左欄 (3:1 中的 3) -->
+                <div class="col-md-9">
+                    <!-- 職業目標 -->
+                    <h4 class="mt-4">🎯職業目標</h4>
+                    <p>成為一名高效的全端開發者，專注於優化用戶體驗。</p>
+
+                    <!-- 工作經驗 -->
+                    <h4 class="mt-4">💼工作經驗</h4>
+                    <div class="mb-3">
+                        <h5>軟體工程師 | 某某科技公司 | 2022.01 - 至今</h5>
+                        <ul>
+                            <li>開發並維護基於 .NET Core 的後端系統，提升 30% 的查詢效率。</li>
+                            <li>協助團隊導入 CI/CD 流程，減少部署時間 50%。</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h5>實習生 | ABC 公司 | 2021.06 - 2021.12</h5>
+                        <ul>
+                            <li>參與前端頁面開發，使用 React 提升網站響應速度。</li>
+                        </ul>
+                    </div>
+
+                    <!-- 專案 -->
+                    <h4 class="mt-4">🚀專案</h4>
+                    <p>
+                        <strong>個人部落格</strong> | 
+                        <a href="https://github.com/zhangsan/blog" target="_blank">GitHub</a>
+                    </p>
+                    <ul>
+                        <li>使用 GitHub Pages 部署靜態網站，分享技術文章。</li>
+                    </ul>
+                </div>
+
+                <!-- 右欄 (3:1 中的 1) -->
+                <div class="sidemenu col-md-3">
+                    <!-- 技能 -->
+                    <h5 class="mt-4">🛠️Skills</h5>
+                    <div align="left">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" height="30" alt=".NET Core logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" height="30" alt=".NET logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="Git logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original.svg" height="30" alt="NuGet logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="Bash logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="30" alt="Electron logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="30" />
+                    </div>
+
+                    <!-- 教育背景 -->
+                    <h5 class="mt-5">🎓Education</h5>
+                    <div>醫學工程學士</div>
+                    <div>中原大學</div>
+                    <div>2017.09 - 2021.06</div>
+
+                    <h5 class="mt-5">📜Certification</h5>
+                    <img src="/assets/img/mcsd.png" alt="MCSD 圖示" height="100" class="ms-4">
+                    <img src="/assets/img/mcsa.png" alt="MCSA 圖示" height="100" class="ms-4">
+                    <img src="/assets/img/mcp.gif" alt="MCP 圖示" height="50" class="ms-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER 區塊 -->
+        <footer>
+            <p>2025 © Copyright. All rights reserved. Layout built with Grok3.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (可選) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <!-- 自訂 JavaScript -->
+    <script>
+        // 頁面載入時顯示 SweetAlert2 倒數計時視窗
+        window.onload = function() {
+            Swal.fire({
+                icon: 'info', // 警告圖示
+                title: '🤓 Hi there!<br> I\'m <span class="text-danger">Brian</span>, a software developer.',
+                timer: 5000, // 5秒倒數計時
+                timerProgressBar: true, // 顯示進度條
+                showConfirmButton: true, // 顯示 OK 按鈕
+                confirmButtonText: 'OK', // 按鈕文字
+                allowOutsideClick: false, // 禁止點擊外部關閉
+                confirmButtonColor: '#4A8079', // 按鈕顏色
+                didOpen: () => {
+                    // Swal.showLoading(); // 可選：顯示載入動畫
+                    // const b = Swal.getHtmlContainer().querySelector('b');
+                    // Swal.getTimerLeft(); // 啟動計時器
+                },
+                willClose: () => {
+                    // 倒數結束或點擊 OK 後執行的動作（可留空）
+                }
+            });
+        };
+    </script>
+</body>
+</html>
