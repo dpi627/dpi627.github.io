@@ -29,6 +29,11 @@ header {
     justify-content: space-between; /* 左邊文字，右邊照片 */
     align-items: center;
 }
+.header-info {
+    font-size: 0.8rem;
+    font-family: Consolas;
+    color: #eee;
+}
 .content {
     padding: 20px;
 }
@@ -36,10 +41,11 @@ footer {
     text-align: center;
     vertical-align: middle;
     padding-top: 1em;
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: #4A8079;
     background-color: #fff;
     border-top: 1px solid #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2, h3, h4, h5 {
     color: #4A8079;
@@ -145,7 +151,7 @@ a:active {
 .timeline-item .timeline-content {
     width: 90%; /* 增加寬度以適應單列，減少溢出 */
     padding: 15px;
-    background: #f8f9fa;
+    background: #fff;
     border-radius: 8px;
     position: relative;
     float: none; /* 移除浮動，改為單列 */
