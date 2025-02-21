@@ -1,0 +1,98 @@
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* 圓形照片 */
+    border: 2px solid #CCC; /* 邊框 */
+    margin-right: 1rem; /* 與文字間距 */
+}
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.a4-container {
+    width: 794px; /* A4 寬度 210mm ≈ 794px */
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+header {
+    background-color: #4A8079;
+    color: #ccc;
+    padding: 20px;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between; /* 左邊文字，右邊照片 */
+    align-items: center;
+}
+.content {
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1em;
+    font-size: 0.7em;
+    color: #4A8079;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+h2, h3, h4, h5 {
+    color: #4A8079;
+    font-weight: bold;
+}
+h1 {
+    margin: 0; /* 移除 h1 預設邊距 */
+}
+.social-icons a {
+    text-decoration: none; /* 移除底線 */
+    margin-right: 10px; /* 圖示之間的間距 */
+}
+.social-icons img {
+    width: 20px;
+    vertical-align: middle; /* 圖示垂直對齊 */
+    border-radius: 50%; /* 圓形圖示 */
+}
+.sidemenu {
+    border-left: #4A8079 1px dashed;
+}
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    overflow: hidden; /* 隱藏超出容器部分 */
+    width: 100%; /* 或設置特定寬度 */
+}
+
+.badge-wrapper {
+    display: flex;
+    gap: 10px; /* 確保每個圖示之間有間距 */
+    animation: scroll 30s linear infinite;
+    white-space: nowrap; /* 防止換行 */
+}
+.badge-wrapper:hover {
+    animation-play-state: paused; /* 懸停時暫停 */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-30%); }
+}
+
+a {
+    color: #4A8079;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #4A8079;
+}
