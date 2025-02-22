@@ -216,4 +216,32 @@ a:active {
     .timeline-item .timeline-year {
         left: -50px;
     }
+    .education-container {
+        flex-direction: column; /* 在小螢幕上堆疊 */
+        align-items: flex-start; /* 左對齊 */
+    }
+
+    .education-image {
+        height: 30px; /* 縮小圖片高度在小螢幕上 */
+        margin-bottom: 0.5rem; /* 圖片與文字之間的間距 */
+    }
+}
+
+.education-container {
+    display: flex; /* 使用 Flexbox 佈局 */
+    align-items: center; /* 垂直置中對齊 */
+    gap: 1rem; /* 圖片與文字之間的間距 */
+    margin-bottom: 1rem; /* 可選：與其他內容的間距 */
+}
+
+.education-image {
+    width: auto; /* 保持圖片寬度比例 */
+    height: 40px; /* 設置圖片高度，根據文字高度調整 */
+    object-fit: cover; /* 確保圖片不失真 */
+    border-radius: 50%; /* 可選：如果圖片需要圓形 */
+    border: 2px solid #CCC; /* 可選：添加邊框 */
+}
+
+.education-text {
+    flex: 1; /* 讓文字佔用剩餘空間 */
 }
