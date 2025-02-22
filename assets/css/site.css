@@ -34,6 +34,20 @@ header {
     font-family: Consolas;
     color: #eee;
 }
+
+.header-info a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    text-decoration: underline;
+}
+
+.header-info a:active {
+    color: #eee;
+}
+
 .content {
     padding: 20px;
 }
@@ -66,7 +80,7 @@ h1 {
 .sidemenu {
     border-left: #4A8079 1px dashed;
 }
-.badge {
+.mybadge {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,13 +89,13 @@ h1 {
     width: 100%; /* 或設置特定寬度 */
 }
 
-.badge-wrapper {
+.mybadge-wrapper {
     display: flex;
     gap: 10px; /* 確保每個圖示之間有間距 */
     animation: scroll 30s linear infinite;
     white-space: nowrap; /* 防止換行 */
 }
-.badge-wrapper:hover {
+.mybadge-wrapper:hover {
     animation-play-state: paused; /* 懸停時暫停 */
 }
 
