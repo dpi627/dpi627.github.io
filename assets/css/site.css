@@ -1,3 +1,8 @@
+.profile-container {
+    position: relative; /* 讓按鈕可以相對定位 */
+    display: inline-block; /* 確保容器只包裹內容 */
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -6,6 +11,29 @@
     border: 2px solid #CCC; /* 邊框 */
     margin-right: 1rem; /* 與文字間距 */
 }
+
+.profile-button {
+    position: absolute; /* 相對於容器定位 */
+    bottom: 5px; /* 距離照片底部 */
+    right: 10px; /* 距離照片右邊 */
+    width: 36px; /* 按鈕大小 */
+    height: 36px; /* 按鈕大小 */
+    border-radius: 50%; /* 圓形按鈕 */
+    background-color: #84beb7; /* 按鈕背景色，可以根據需要調整 */
+    color: white; /* 圖標顏色 */
+    border: #2e4d49 1px dashed; /* 移除邊框 */
+    cursor: pointer; /* 鼠標懸停時顯示手型 */
+    font-size: 24px; /* 調整 👋 的大小 */
+    display: flex; /* 讓圖標居中 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    padding: 0; /* 移除內邊距 */
+}
+
+.profile-button:hover {
+    background-color: #2e4d49; /* 鼠標懸停時的背景色 */
+}
+
 body {
     background-color: #f8f9fa;
     display: flex;
@@ -79,6 +107,15 @@ h1 {
 }
 .sidemenu {
     border-left: #4A8079 1px dashed;
+}
+.presentation-item {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.2rem;
+}
+.project-item {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
 }
 .mybadge {
     display: flex;
