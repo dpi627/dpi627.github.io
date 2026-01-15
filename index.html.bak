@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian - 個人履歷</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- 自訂 CSS -->
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+    <!-- A4 大小的整體容器 -->
+    <div class="a4-container">
+        <!-- HEADER 區塊 -->
+        <header>
+            <div>
+                <div class="text-light ps-3" style="font-size: 1.5rem; border-left: #fed000 3px solid;">
+                    <span class="me-2">李</span>威德
+                    <span class="fs-08 ms-2" style="color: #84beb7;">(Brian Lee)</span>
+                </div>
+                <hr>
+                <p class="header-info">
+                    ✉️<a href="mailto:dpi.studio@gmail.com">dpi.studio@gmail.com</a> 📞+886-919-580-627 🌏New Taipei
+                    City
+
+                <div class="social-icons">
+                    <a href="https://github.com/dpi627" target="_blank">
+                        <img src="/assets/img/github.svg">
+                    </a>
+                    <a href="https://medium.com/@dpi.studio" target="_blank">
+                        <img src="/assets/img/medium.svg">
+                    </a>
+                    <a href="https://dpicode.blogspot.com/" target="_blank">
+                        <img src="/assets/img/blogger.svg">
+                    </a>
+                    <!-- <a href="https://linkedin.com/in/dpi627" target="_blank">
+                        <img src="/assets/img/linkedin.svg">
+                    </a> -->
+                    <a href="https://www.flickr.com/photos/dpi/albums" target="_blank">
+                        <img src="/assets/img/flickr.svg">
+                    </a>
+                </div>
+                </p>
+            </div>
+            <div class="profile-container">
+                <img src="/assets/img/avatar2.jpg" alt="Profile" class="profile-pic">
+                <button class="profile-button" onclick="greeting()">👋</button>
+            </div>
+        </header>
+
+        <div class="mybadge">
+            <div class="mybadge-wrapper">
+                <img src="https://img.shields.io/badge/-8-512BD4?logo=dotnet">
+                <img src="https://img.shields.io/badge/-6-512BD4?logo=dotnet">
+                <img src="https://img.shields.io/badge/-Framework-3484D2?logo=dotnet">
+                <img src="https://img.shields.io/badge/-Standard-056473?logo=dotnet">
+                <img src="https://img.shields.io/badge/-NuGet-004880?logo=nuget">
+                <img src="https://img.shields.io/badge/Git-555?logo=git">
+                <img src="https://img.shields.io/badge/gitignore-204ECF?logo=gitignore.io">
+                <img src="https://img.shields.io/badge/GitHub-555?logo=github">
+                <img src="https://img.shields.io/badge/Gitea-555?logo=gitea">
+                <img src="https://img.shields.io/badge/Gitea_Actions-555?logo=githubactions">
+                <img src="https://img.shields.io/badge/Sourcetree-0052CC?logo=sourcetree">
+                <img src="https://img.shields.io/badge/draw.io-555?logo=diagrams.net">
+                <img src="https://img.shields.io/badge/YAML-CB171E?logo=yaml">
+                <img src="https://img.shields.io/badge/Markdown-555?logo=markdown">
+                <img src="https://img.shields.io/badge/LaTex-008080?logo=latex">
+                <img src="https://img.shields.io/badge/Mermaid-555?logo=mermaid">
+                <img src="https://img.shields.io/badge/SVN-555?logo=subversion">
+                <img src="https://img.shields.io/badge/Shields.io-555?logo=shieldsdotio">
+                <img src="https://img.shields.io/badge/Anthropic-191919?logo=anthropic">
+                <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai">
+                <img src="https://img.shields.io/badge/GitHub_Copilot-555?logo=githubcopilot">
+                <!--duplicate for scroll-->
+                <img src="https://img.shields.io/badge/-8-512BD4?logo=dotnet">
+                <img src="https://img.shields.io/badge/-6-512BD4?logo=dotnet">
+                <img src="https://img.shields.io/badge/-Framework-3484D2?logo=dotnet">
+                <img src="https://img.shields.io/badge/-Standard-056473?logo=dotnet">
+                <img src="https://img.shields.io/badge/-NuGet-004880?logo=nuget">
+                <img src="https://img.shields.io/badge/Git-555?logo=git">
+                <img src="https://img.shields.io/badge/gitignore-204ECF?logo=gitignore.io">
+                <img src="https://img.shields.io/badge/GitHub-555?logo=github">
+                <img src="https://img.shields.io/badge/Gitea-555?logo=gitea">
+                <img src="https://img.shields.io/badge/Gitea_Actions-555?logo=githubactions">
+                <img src="https://img.shields.io/badge/Sourcetree-0052CC?logo=sourcetree">
+                <img src="https://img.shields.io/badge/draw.io-555?logo=diagrams.net">
+                <img src="https://img.shields.io/badge/YAML-CB171E?logo=yaml">
+                <img src="https://img.shields.io/badge/Markdown-555?logo=markdown">
+                <img src="https://img.shields.io/badge/LaTex-008080?logo=latex">
+                <img src="https://img.shields.io/badge/Mermaid-555?logo=mermaid">
+                <img src="https://img.shields.io/badge/SVN-555?logo=subversion">
+                <img src="https://img.shields.io/badge/Shields.io-555?logo=shieldsdotio">
+                <img src="https://img.shields.io/badge/Anthropic-191919?logo=anthropic">
+                <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai">
+                <img src="https://img.shields.io/badge/GitHub_Copilot-555?logo=githubcopilot">
+            </div>
+        </div>
+
+        <!-- CONTENT 區塊 -->
+        <div class="content">
+            <div class="row">
+                <!-- 左欄 (3:1 中的 3) -->
+                <div class="col-md-9">
+                    <!-- 職業目標 -->
+                    <h5>🎯About</h5>
+                    <hr>
+                    <ul>
+                        <li>多年 .NET 開發經驗，包含 Web 與 Desktop App</li>
+                        <li>立志成為一名高效的全端開發者，並專注於優化用戶體驗</li>
+                        <li>熱愛學習新事物，與 AI 攜手前行，期待能改變世界</li>
+                    </ul>
+
+                    <!-- 工作經驗 -->
+                    <h5 class="mt-5">🌱Experience</h5>
+                    <hr>
+                    <div class="timeline">
+                        <!-- SGS Sr. Project Planner -->
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <div style="float: right;">
+                                    <img src="/assets/img/sgs.png" alt="SGS logo" height="55">
+                                </div>
+                                <h5>SGS - Sr. Project Planner</h5>
+                                <p class="fs-08">2018.02 till now, <span class="text-danger">7y1m</span></p>
+                                <ul>
+                                    <li>AI 落地方案研究與實作，導入多項 AI 應用</li>
+                                    <li>開發多項 NuGet 套件並建立內部共享服務</li>
+                                    <li>自建 Gitea 並進行 Git 內訓，協助團隊制定工作流程</li>
+                                    <li>協助部門導入 GitHub Copilot，啟用 AI 輔助開發</li>
+                                    <li>獨力完成多項自動化應用程式開發 <span class="fs-07">(訪談、規劃、開發、部署)</span></li>
+                                    <li>核心系統 LIMS 重構升級、開發與維運</li>
+                                    <li>協助日本分公司導入系統，完成數位轉型</li>
+                                    <li>派駐香港子公司，協助實驗流程數位化</li>
+                                </ul>
+                                <div class="text-primary fs-06">.NET, MVC, WebAPI, WinForm, WPF, EFCore, CICD, Ollama,
+                                    Dify, n8n, GPTs, OpenAI API, Azure DevOps Service, Azure OpenAI Service, Seq, AHK,
+                                    SerialPort, Blutooth, RFID, SVN, Markdown, YAML, Docker, Git, Gitea, Gitea Actions,
+                                    GitHub Copilot</div>
+                            </div>
+                        </div>
+
+                        <!-- 天主教輔仁大學附設醫院 -->
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-content">
+                                <div style="float: right;">
+                                    <img src="/assets/img/fjuh.png" alt="輔仁大學醫院 logo" height="55">
+                                </div>
+                                <h5>輔仁大學醫院 - 軟體工程師</h5>
+                                <p class="fs-08">2017.07 - 2018.01, <span class="text-danger">7m</span></p>
+                                <ul>
+                                    <li>HIS 與相關系統，建置、開發與導入</li>
+                                </ul>
+                                <div class="text-primary fs-06">.NET Framework, WebForm, WCF, Oracle</div>
+                            </div>
+                        </div>
+
+                        <!-- 中華黃頁 -->
+                        <div class="timeline-item">
+                            <div class="timeline-year">2017</div>
+                            <div class="timeline-content">
+                                <div style="float: right;">
+                                    <img src="/assets/img/yc.jpg" alt="logo" height="55">
+                                </div>
+                                <h5>永慶房屋 - 資訊處主任</h5>
+                                <p class="fs-08">2007.05 - 2017.06, <span class="text-danger">10y2m</span></p>
+                                <ul>
+                                    <li>全新開發核心系統 TCSC，並負責日常維運</li>
+                                    <li>全新開發帳務系統，後期並導入電子發票</li>
+                                    <li>管理四人以下團隊</li>
+                                </ul>
+                                <div class="text-primary fs-06">.NET Framework, WebForm, WebService, MSSQL, Informix,
+                                    VSS</div>
+                            </div>
+                        </div>
+
+                        <!-- yam -->
+                        <div class="timeline-item">
+                            <div class="timeline-year">2007</div>
+                            <div class="timeline-content">
+                                <div style="float: right;">
+                                    <img src="/assets/img/yam.png" alt="蕃薯藤 logo" height="55"
+                                        style="border-radius: 10%;">
+                                </div>
+                                <h5>蕃薯藤 - 軟體工程師</h5>
+                                <p class="fs-08">2004.04 - 2007.04, <span class="text-danger">3y1m</span></p>
+                                <ul>
+                                    <li>yam.com 入口網站維運</li>
+                                    <li>yam.com EC 系統前後台維運</li>
+                                    <li>開發各式行銷活動網站</li>
+                                </ul>
+                                <div class="text-primary fs-06">.NET Framework, WebForm, WebService, MSSQL, Java, TFS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-5">🤖Contact</h5>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 48 64 Q 28 65 14 78 L 14 78 L 14 78 Q 1 92 0 112 Q 1 136 19 150 L 237 314 L 237 314 Q 256 326 275 314 L 493 150 L 493 150 Q 511 136 512 112 Q 511 92 498 78 Q 484 65 464 64 L 48 64 L 48 64 Z M 0 176 L 0 384 L 0 176 L 0 384 Q 1 411 19 429 Q 37 447 64 448 L 448 448 L 448 448 Q 475 447 493 429 Q 511 411 512 384 L 512 176 L 512 176 L 294 339 L 294 339 Q 277 352 256 352 Q 235 352 218 339 L 0 176 L 0 176 Z" />
+                                </svg>
+                                <a class="fs-08" href="mailto:dpi.studio@gmail.com">dpi.studio@gmail.com</a>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 164.3579766536965 26.894941634241246 Q 158.38132295719845 11.95330739299611 145.431906614786 5.976653696498055 L 145.431906614786 5.976653696498055 L 145.431906614786 5.976653696498055 Q 131.4863813229572 0 116.54474708171206 2.9883268482490273 L 28.88715953307393 26.894941634241246 L 28.88715953307393 26.894941634241246 Q 1.9922178988326849 36.856031128404666 0 65.7431906614786 Q 0.9961089494163424 190.2568093385214 60.762645914396884 290.863813229572 Q 120.52918287937743 391.47081712062254 221.13618677042803 451.2373540856031 Q 321.7431906614786 511.00389105058366 446.2568093385214 512 Q 475.14396887159535 510.0077821011673 485.10505836575874 483.11284046692606 L 509.011673151751 395.45525291828795 L 509.011673151751 395.45525291828795 Q 512 380.5136186770428 506.02334630350197 366.568093385214 Q 500.0466926070039 353.61867704280155 485.10505836575874 347.6420233463035 L 389.47859922178986 307.7976653696498 L 389.47859922178986 307.7976653696498 Q 362.58365758754866 298.83268482490274 343.6575875486381 319.7509727626459 L 303.81322957198444 368.5603112840467 L 303.81322957198444 368.5603112840467 Q 251.01945525291828 343.6575875486381 209.1828793774319 302.8171206225681 Q 168.34241245136187 260.9805447470817 143.4396887159533 208.18677042801556 L 192.24902723735408 168.34241245136187 L 192.24902723735408 168.34241245136187 Q 213.1673151750973 149.41634241245137 204.2023346303502 122.52140077821012 L 164.3579766536965 26.894941634241246 L 164.3579766536965 26.894941634241246 Z" />
+                                </svg>
+                                <span class="fs-08">+886-919-580-627</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 280.04696673189824 499.9765166340509 Q 307.0998043052838 466.9119373776908 346.1761252446184 410.8023483365949 L 346.1761252446184 410.8023483365949 L 346.1761252446184 410.8023483365949 Q 385.25244618395305 355.69471624266146 416.31311154598825 296.57925636007826 L 416.31311154598825 296.57925636007826 L 416.31311154598825 296.57925636007826 Q 446.37181996086105 237.4637964774951 448.3757338551859 192.3757338551859 Q 446.37181996086105 110.21526418786692 392.26614481409 56.10958904109589 Q 338.160469667319 2.003913894324853 256 0 Q 173.83953033268102 2.003913894324853 119.73385518590997 56.10958904109589 Q 65.62818003913894 110.21526418786692 63.62426614481409 192.3757338551859 Q 65.62818003913894 237.4637964774951 95.68688845401174 296.57925636007826 Q 126.74755381604696 355.69471624266146 165.8238747553816 410.8023483365949 Q 204.90019569471625 466.9119373776908 231.95303326810176 499.9765166340509 Q 241.97260273972603 512 256 512 Q 270.027397260274 512 280.04696673189824 499.9765166340509 L 280.04696673189824 499.9765166340509 Z M 256 128.2504892367906 Q 292.07045009784736 129.25244618395303 311.1076320939335 160.31311154598825 Q 329.14285714285717 192.3757338551859 311.1076320939335 224.43835616438355 Q 292.07045009784736 255.49902152641877 256 256.5009784735812 Q 219.92954990215264 255.49902152641877 200.89236790606654 224.43835616438355 Q 182.85714285714286 192.3757338551859 200.89236790606654 160.31311154598825 Q 219.92954990215264 129.25244618395303 256 128.2504892367906 L 256 128.2504892367906 Z" />
+                                </svg>
+                                <span class="fs-08">New Taipei City, Taiwan</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 73.14285714285714 0 Q 42.285714285714285 1.1428571428571428 21.714285714285715 21.714285714285715 L 21.714285714285715 21.714285714285715 L 21.714285714285715 21.714285714285715 Q 1.1428571428571428 42.285714285714285 0 73.14285714285714 L 0 438.85714285714283 L 0 438.85714285714283 Q 1.1428571428571428 469.7142857142857 21.714285714285715 490.2857142857143 Q 42.285714285714285 510.85714285714283 73.14285714285714 512 L 185.14285714285714 512 L 185.14285714285714 512 L 185.14285714285714 345.14285714285717 L 185.14285714285714 345.14285714285717 L 124.57142857142857 345.14285714285717 L 124.57142857142857 345.14285714285717 L 124.57142857142857 256 L 124.57142857142857 256 L 185.14285714285714 256 L 185.14285714285714 256 L 185.14285714285714 217.14285714285714 L 185.14285714285714 217.14285714285714 Q 184 69.71428571428571 328 72 Q 342.85714285714283 72 362.2857142857143 74.28571428571429 Q 380.57142857142856 76.57142857142857 392 78.85714285714286 L 392 160 L 392 160 Q 380.57142857142856 158.85714285714286 357.7142857142857 158.85714285714286 Q 322.2857142857143 158.85714285714286 306.2857142857143 173.71428571428572 Q 291.42857142857144 189.71428571428572 291.42857142857144 224 L 291.42857142857144 256 L 291.42857142857144 256 L 387.42857142857144 256 L 387.42857142857144 256 L 370.2857142857143 345.14285714285717 L 370.2857142857143 345.14285714285717 L 291.42857142857144 345.14285714285717 L 291.42857142857144 345.14285714285717 L 291.42857142857144 512 L 291.42857142857144 512 L 438.85714285714283 512 L 438.85714285714283 512 Q 469.7142857142857 510.85714285714283 490.2857142857143 490.2857142857143 Q 510.85714285714283 469.7142857142857 512 438.85714285714283 L 512 73.14285714285714 L 512 73.14285714285714 Q 510.85714285714283 42.285714285714285 490.2857142857143 21.714285714285715 Q 469.7142857142857 1.1428571428571428 438.85714285714283 0 L 73.14285714285714 0 L 73.14285714285714 0 Z" />
+                                </svg>
+                                <a class="fs-08" href="https://www.facebook.com/dpistudio" target="_blank">Facebook</a>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 185.14285714285714 187.42857142857142 Q 188.57142857142858 182.85714285714286 195.42857142857142 182.85714285714286 L 195.42857142857142 182.85714285714286 L 195.42857142857142 182.85714285714286 Q 202.28571428571428 181.71428571428572 227.42857142857142 181.71428571428572 Q 249.14285714285714 181.71428571428572 256 181.71428571428572 Q 261.7142857142857 182.85714285714286 264 184 Q 273.14285714285717 188.57142857142858 273.14285714285717 200 Q 273.14285714285717 209.14285714285714 265.14285714285717 214.85714285714286 Q 262.85714285714283 216 257.14285714285717 217.14285714285714 Q 251.42857142857142 217.14285714285714 228.57142857142858 217.14285714285714 Q 198.85714285714286 217.14285714285714 193.14285714285714 216 Q 184 213.71428571428572 181.71428571428572 203.42857142857142 Q 179.42857142857142 194.28571428571428 185.14285714285714 187.42857142857142 L 185.14285714285714 187.42857142857142 Z M 256 296 Q 211.42857142857142 294.85714285714283 200 296 L 200 296 L 200 296 Q 188.57142857142858 297.14285714285717 187.42857142857142 300.57142857142856 Q 180.57142857142858 307.42857142857144 180.57142857142858 316.57142857142856 Q 182.85714285714286 325.7142857142857 192 330.2857142857143 Q 193.14285714285714 330.2857142857143 206.85714285714286 331.42857142857144 Q 220.57142857142858 331.42857142857144 256 331.42857142857144 L 310.85714285714283 330.2857142857143 L 310.85714285714283 330.2857142857143 L 321.14285714285717 329.14285714285717 L 321.14285714285717 329.14285714285717 Q 337.14285714285717 316.57142857142856 324.57142857142856 300.57142857142856 Q 324.57142857142856 300.57142857142856 324.57142857142856 300.57142857142856 Q 322.2857142857143 297.14285714285717 312 296 Q 300.57142857142856 294.85714285714283 256 296 L 256 296 Z M 510.85714285714283 444.57142857142856 Q 502.85714285714283 494.85714285714283 452.57142857142856 509.7142857142857 Q 450.2857142857143 510.85714285714283 438.85714285714283 510.85714285714283 Q 428.57142857142856 512 387.42857142857144 512 Q 346.2857142857143 512 254.85714285714286 512 Q 166.85714285714286 512 125.71428571428571 512 Q 84.57142857142857 512 72 510.85714285714283 Q 60.57142857142857 510.85714285714283 58.285714285714285 509.7142857142857 Q 44.57142857142857 506.2857142857143 33.142857142857146 498.2857142857143 Q 21.714285714285715 489.14285714285717 13.714285714285714 480 Q 5.714285714285714 468.57142857142856 2.2857142857142856 454.85714285714283 Q 1.1428571428571428 452.57142857142856 1.1428571428571428 441.14285714285717 Q 0 430.85714285714283 0 389.7142857142857 Q 0 348.57142857142856 0 256 Q 0 164.57142857142858 0 123.42857142857143 Q 0 82.28571428571429 1.1428571428571428 72 Q 1.1428571428571428 60.57142857142857 2.2857142857142856 58.285714285714285 Q 14.857142857142858 13.714285714285714 60.57142857142857 1.1428571428571428 Q 66.28571428571429 1.1428571428571428 123.42857142857143 0 Q 180.57142857142858 0 254.85714285714286 0 Q 329.14285714285717 0 386.2857142857143 0 Q 443.42857142857144 1.1428571428571428 449.14285714285717 1.1428571428571428 Q 485.7142857142857 9.142857142857142 504 43.42857142857143 Q 505.14285714285717 44.57142857142857 505.14285714285717 46.857142857142854 Q 508.57142857142856 50.285714285714285 509.7142857142857 61.714285714285715 Q 510.85714285714283 73.14285714285714 512 114.28571428571429 Q 512 155.42857142857142 512 249.14285714285714 Q 512 347.42857142857144 512 394.2857142857143 Q 512 440 510.85714285714283 444.57142857142856 L 510.85714285714283 444.57142857142856 Z M 413.7142857142857 232 Q 411.42857142857144 222.85714285714286 404.57142857142856 219.42857142857142 Q 401.14285714285717 218.28571428571428 387.42857142857144 217.14285714285714 Q 377.14285714285717 217.14285714285714 373.7142857142857 216 Q 369.14285714285717 216 366.85714285714283 213.71428571428572 Q 356.57142857142856 209.14285714285714 357.7142857142857 193.14285714285714 Q 357.7142857142857 157.71428571428572 329.14285714285717 128 Q 308.57142857142856 107.42857142857143 282.2857142857143 99.42857142857143 Q 280 98.28571428571429 269.7142857142857 98.28571428571429 Q 260.57142857142856 98.28571428571429 237.71428571428572 97.14285714285714 Q 202.28571428571428 97.14285714285714 187.42857142857142 98.28571428571429 Q 171.42857142857142 99.42857142857143 161.14285714285714 105.14285714285714 Q 113.14285714285714 124.57142857142857 99.42857142857143 176 Q 98.28571428571429 179.42857142857142 98.28571428571429 193.14285714285714 Q 97.14285714285714 208 97.14285714285714 249.14285714285714 Q 97.14285714285714 301.7142857142857 98.28571428571429 318.85714285714283 Q 98.28571428571429 337.14285714285717 101.71428571428571 346.2857142857143 Q 110.85714285714286 372.57142857142856 131.42857142857142 390.85714285714283 Q 152 408 176 412.57142857142856 Q 182.85714285714286 413.7142857142857 217.14285714285714 413.7142857142857 Q 251.42857142857142 414.85714285714283 285.7142857142857 414.85714285714283 Q 320 413.7142857142857 329.14285714285717 413.7142857142857 Q 362.2857142857143 409.14285714285717 386.2857142857143 384 Q 404.57142857142856 365.7142857142857 411.42857142857144 339.42857142857144 Q 413.7142857142857 332.57142857142856 413.7142857142857 307.42857142857144 Q 414.85714285714283 283.42857142857144 414.85714285714283 260.57142857142856 Q 413.7142857142857 236.57142857142858 413.7142857142857 232 L 413.7142857142857 232 Z" />
+                                </svg>
+                                <a class="fs-08" href="https://i-dpi.blogspot.com/" target="_blank">生活紀錄</a>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#4A8079"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M 185.14285714285714 187.42857142857142 Q 188.57142857142858 182.85714285714286 195.42857142857142 182.85714285714286 L 195.42857142857142 182.85714285714286 L 195.42857142857142 182.85714285714286 Q 202.28571428571428 181.71428571428572 227.42857142857142 181.71428571428572 Q 249.14285714285714 181.71428571428572 256 181.71428571428572 Q 261.7142857142857 182.85714285714286 264 184 Q 273.14285714285717 188.57142857142858 273.14285714285717 200 Q 273.14285714285717 209.14285714285714 265.14285714285717 214.85714285714286 Q 262.85714285714283 216 257.14285714285717 217.14285714285714 Q 251.42857142857142 217.14285714285714 228.57142857142858 217.14285714285714 Q 198.85714285714286 217.14285714285714 193.14285714285714 216 Q 184 213.71428571428572 181.71428571428572 203.42857142857142 Q 179.42857142857142 194.28571428571428 185.14285714285714 187.42857142857142 L 185.14285714285714 187.42857142857142 Z M 256 296 Q 211.42857142857142 294.85714285714283 200 296 L 200 296 L 200 296 Q 188.57142857142858 297.14285714285717 187.42857142857142 300.57142857142856 Q 180.57142857142858 307.42857142857144 180.57142857142858 316.57142857142856 Q 182.85714285714286 325.7142857142857 192 330.2857142857143 Q 193.14285714285714 330.2857142857143 206.85714285714286 331.42857142857144 Q 220.57142857142858 331.42857142857144 256 331.42857142857144 L 310.85714285714283 330.2857142857143 L 310.85714285714283 330.2857142857143 L 321.14285714285717 329.14285714285717 L 321.14285714285717 329.14285714285717 Q 337.14285714285717 316.57142857142856 324.57142857142856 300.57142857142856 Q 324.57142857142856 300.57142857142856 324.57142857142856 300.57142857142856 Q 322.2857142857143 297.14285714285717 312 296 Q 300.57142857142856 294.85714285714283 256 296 L 256 296 Z M 510.85714285714283 444.57142857142856 Q 502.85714285714283 494.85714285714283 452.57142857142856 509.7142857142857 Q 450.2857142857143 510.85714285714283 438.85714285714283 510.85714285714283 Q 428.57142857142856 512 387.42857142857144 512 Q 346.2857142857143 512 254.85714285714286 512 Q 166.85714285714286 512 125.71428571428571 512 Q 84.57142857142857 512 72 510.85714285714283 Q 60.57142857142857 510.85714285714283 58.285714285714285 509.7142857142857 Q 44.57142857142857 506.2857142857143 33.142857142857146 498.2857142857143 Q 21.714285714285715 489.14285714285717 13.714285714285714 480 Q 5.714285714285714 468.57142857142856 2.2857142857142856 454.85714285714283 Q 1.1428571428571428 452.57142857142856 1.1428571428571428 441.14285714285717 Q 0 430.85714285714283 0 389.7142857142857 Q 0 348.57142857142856 0 256 Q 0 164.57142857142858 0 123.42857142857143 Q 0 82.28571428571429 1.1428571428571428 72 Q 1.1428571428571428 60.57142857142857 2.2857142857142856 58.285714285714285 Q 14.857142857142858 13.714285714285714 60.57142857142857 1.1428571428571428 Q 66.28571428571429 1.1428571428571428 123.42857142857143 0 Q 180.57142857142858 0 254.85714285714286 0 Q 329.14285714285717 0 386.2857142857143 0 Q 443.42857142857144 1.1428571428571428 449.14285714285717 1.1428571428571428 Q 485.7142857142857 9.142857142857142 504 43.42857142857143 Q 505.14285714285717 44.57142857142857 505.14285714285717 46.857142857142854 Q 508.57142857142856 50.285714285714285 509.7142857142857 61.714285714285715 Q 510.85714285714283 73.14285714285714 512 114.28571428571429 Q 512 155.42857142857142 512 249.14285714285714 Q 512 347.42857142857144 512 394.2857142857143 Q 512 440 510.85714285714283 444.57142857142856 L 510.85714285714283 444.57142857142856 Z M 413.7142857142857 232 Q 411.42857142857144 222.85714285714286 404.57142857142856 219.42857142857142 Q 401.14285714285717 218.28571428571428 387.42857142857144 217.14285714285714 Q 377.14285714285717 217.14285714285714 373.7142857142857 216 Q 369.14285714285717 216 366.85714285714283 213.71428571428572 Q 356.57142857142856 209.14285714285714 357.7142857142857 193.14285714285714 Q 357.7142857142857 157.71428571428572 329.14285714285717 128 Q 308.57142857142856 107.42857142857143 282.2857142857143 99.42857142857143 Q 280 98.28571428571429 269.7142857142857 98.28571428571429 Q 260.57142857142856 98.28571428571429 237.71428571428572 97.14285714285714 Q 202.28571428571428 97.14285714285714 187.42857142857142 98.28571428571429 Q 171.42857142857142 99.42857142857143 161.14285714285714 105.14285714285714 Q 113.14285714285714 124.57142857142857 99.42857142857143 176 Q 98.28571428571429 179.42857142857142 98.28571428571429 193.14285714285714 Q 97.14285714285714 208 97.14285714285714 249.14285714285714 Q 97.14285714285714 301.7142857142857 98.28571428571429 318.85714285714283 Q 98.28571428571429 337.14285714285717 101.71428571428571 346.2857142857143 Q 110.85714285714286 372.57142857142856 131.42857142857142 390.85714285714283 Q 152 408 176 412.57142857142856 Q 182.85714285714286 413.7142857142857 217.14285714285714 413.7142857142857 Q 251.42857142857142 414.85714285714283 285.7142857142857 414.85714285714283 Q 320 413.7142857142857 329.14285714285717 413.7142857142857 Q 362.2857142857143 409.14285714285717 386.2857142857143 384 Q 404.57142857142856 365.7142857142857 411.42857142857144 339.42857142857144 Q 413.7142857142857 332.57142857142856 413.7142857142857 307.42857142857144 Q 414.85714285714283 283.42857142857144 414.85714285714283 260.57142857142856 Q 413.7142857142857 236.57142857142858 413.7142857142857 232 L 413.7142857142857 232 Z" />
+                                </svg>
+                                <a class="fs-08" href="https://dpimg.blogspot.com/" target="_blank">婚宴紀錄</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-08 mt-5" style="text-align: center;">
+                        Thank you for your review. 🩷
+                    </div>
+                </div>
+
+                <!-- 右欄 (3:1 中的 1) -->
+                <div class="sidemenu col-md-3">
+                    <!-- 技能 -->
+                    <h5>🛠️Skills</h5>
+                    <hr>
+                    <div align="left">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                            height="30" alt=".NET Core logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                            height="30" alt=".NET logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30"
+                            alt="Git logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original.svg"
+                            height="30" alt="NuGet logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30"
+                            alt="Bash logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg"
+                            height="30" alt="Electron logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                            height="30" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" />
+                    </div>
+
+                    <h5 class="mt-5">📰AI簡報</h5>
+                    <hr>
+                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vThBMgx99YqWGJTFNJNvq6RHi6G40VJ_omOTkkOeuXetnCo20LwsC0bAOCaa-Oaug/pub?start=true&loop=false&delayms=3000" target="_blank">Copilot 進階應用</a>
+                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vSmAg1nZfRPUxqvW8eQkWJXwRRj3nRqfjwMGx7AG_uQPJvf5fzi8FhiL1WaQwLkQA/pub?start=false&loop=false&delayms=3000" target="_blank">Copilot 導入實作</a>
+
+                    <h5 class="mt-5">📜Certification</h5>
+                    <hr>
+                    <img src="/assets/img/mcsd.png" alt="MCSD 圖示" height="100" class="ms-4">
+                    <img src="/assets/img/mcsa.png" alt="MCSA 圖示" height="100" class="ms-4">
+                    <img src="/assets/img/mcp.gif" alt="MCP 圖示" height="50" class="ms-4 mt-2">
+
+                    <!-- 教育訓練 -->
+                    <h5 class="mt-5">📚Training</h5>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/spreadsheets/d/1_JDon2Kmr6dPpK8sjt4hD0Icbd9MLs0ODzZQJMNV1_g/edit?usp=sharing"
+                                target="_blank">
+                                近年學習歷程清單
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- 教育背景 -->
+                    <h5 class="mt-5">🎓Education</h5>
+                    <hr>
+                    <div class="education-container">
+                        <img src="/assets/img/cycu.png" alt="Education Icon" class="education-image">
+                        <div class="education-text">
+                            <div><strong>醫學工程學士</strong></div>
+                            <div class="fs-09">中原大學</div>
+                            <div class="fs-06 text-secondary">1997 - 2001</div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-5">✨Bonus Skills</h5>
+                    <hr>
+                    <span class="badge bg-secondary">平面攝影</span>
+                    <span class="badge bg-secondary">視覺設計</span>
+                    <span class="badge bg-secondary">基礎剪輯</span>
+                    <span class="badge bg-secondary">數位後製</span>
+                    <span class="badge bg-secondary">Photoshop</span>
+                    <span class="badge bg-secondary">Lightroom</span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER 區塊 -->
+        <footer>
+            <p>
+                2025 © Copyright. This page built with AI:
+                <img class="ms-1 me-1" src="assets/img/grok.png" alt="Grok logo" height="10"
+                    style="vertical-align:baseline;">Grok
+                <img class="ms-1 me-1" src="assets/img/chatgpt.png" alt="ChatGPT logo" height="10"
+                    style="vertical-align:baseline;">ChatGPT
+                <img class="ms-1 me-1" src="assets/img/felo.png" alt="elo logo" height="10"
+                    style="vertical-align:baseline;">Felo
+                <img class="ms-1 me-1" src="assets/img/github-copilot.png" alt="GitHub Copilot logo" height="11"
+                    style="vertical-align:baseline;">GitHub Copilot
+            </p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (可選) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <!-- 自訂 JavaScript -->
+    <script src="/assets/js/site.js"></script>
+</body>
+
+</html>
